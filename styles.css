@@ -1,11 +1,12 @@
 * {
   margin: 0;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 body {
   width: 960px;
   margin: 0 auto;
-  background-color: #13243e;
+  background-color: #333333;
 }
 
 header {
@@ -16,19 +17,16 @@ header img {
   height: 100px;
 }
 
-
-
-
 section {
   margin: 2rem 0;
 }
 
 #bio {
- display: flex;
+  display: flex;
 }
 
 #bio img {
-  height: 200px;
+  height: 210px;
   width: fit-content;
 }
 
@@ -36,7 +34,8 @@ section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  font-size: larger;
+  font-size: 2em;
+  color: white;
 }
 
 #bio-choose {
@@ -44,17 +43,27 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
 }
 
 #choose-list {
   padding: 1rem;
-  background-color: #888888;
+  background-color: #424242;
   font-weight: 100;
+  display: flex;
+  flex-direction: column;
+padding-left: 0;
 }
 
-#choose-list h4{
- margin-bottom: 1rem;
+#choose-list ul {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#choose-list h4 {
+  color: #e2bc91f1;
 }
 
 figure img {
@@ -65,33 +74,48 @@ figure img {
 
 figcaption {
   background-color: rgba(0, 0, 0, 0.39);
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
   bottom: 3rem;
-
+  border-radius: 1em;
 }
 
 #tech img {
-height: 200px;
+  height: 200px;
 }
 #tech {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0%;
+}
+
+#interest {
+  margin-top: 0;
 }
 
 #interest h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 250%;
+}
+
+#interest h4 {
+  font-size: x-large;
+  color: #e2bc91f1;
 }
 
 .greyBox {
-  background-color: #888888;
+  background-color: #444040;
   font-weight: 100;
   padding: 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
 }
 
 #copyright {
-  color: blue;
-  background-color: chartreuse;
+  color: rgba(255, 255, 255, 0.253);
+  background-color: rgba(8, 8, 8, 0.767);
+  text-align: center;
+  border-radius: 1rem;
 }
 
 figure {
@@ -100,11 +124,24 @@ figure {
   width: 10rem;
 }
 
-h4, h2{
+h4,
+h2 {
   color: bisque;
 }
 
 .greyBox p {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
+  text-align: left;
 }
 
+.list {
+  list-style-position: inside;
+}
+
+.list h4 {
+  font-size: x-large;
+}
+
+section h2 {
+  text-align: center;
+}
